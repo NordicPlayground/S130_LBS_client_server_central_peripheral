@@ -64,6 +64,7 @@ ASM_SOURCE_FILES  = ../../../../../components/toolchain/gcc/gcc_startup_nrf51.s
 INC_PATHS  = -I../config
 INC_PATHS += -I../../../../../components/toolchain
 INC_PATHS += -I../../../../bsp
+INC_PATHS += -I../../../../../components/libraries/trace
 INC_PATHS += -I../../../../../components/libraries/button
 INC_PATHS += -I../../../../../components/softdevice/s130/headers
 INC_PATHS += -I../../../../../components/libraries/scheduler
