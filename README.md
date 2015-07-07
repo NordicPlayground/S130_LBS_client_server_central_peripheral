@@ -60,6 +60,11 @@ Here the device that sends the write request is a client for the server which ch
 
 Effort has been taken to keep the code common to both central and peripheral. The differences should standout evidently.
 Projects
+
+Application Events
+-------------------
+All events are re-routed through scheduler to run in main context. This way you can safely call pstorage API's where many have noticed problems if done through SWI interrupt context.
+
 ----------
 Adding projects for both Keil and GCC.
 Tested on Keil 5.15 and GNUTools\4.9 2015q1.
